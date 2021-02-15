@@ -94,5 +94,35 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="palazzo-4-piani-a-fondale.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="edificio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="homer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tennis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sumo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="scacciafantasmi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="meccanico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="biscottino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="homer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ascensore.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

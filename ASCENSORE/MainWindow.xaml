@@ -7,6 +7,35 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Image Margin="0,0,0.333,-0.333" Source="edificio.jpg" Stretch="Fill"/>
+        <Image Margin="133,309,609.333,19.667" Source="tennis.png" Stretch="Fill" RenderTransformOrigin="0.021,0.499"/>
+        <Image Margin="166,272,598.333,105.667" Source="sumo.png" Stretch="Fill"/>
+        <Image Margin="159,211,604.333,161.667" Source="scacciafantasmi.png" Stretch="Fill"/>
+        <Image Margin="159,153,594.333,218.667" Source="meccanico.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.005"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="166,94,597.333,275.667" Source="biscottino.png" Stretch="Fill"/>
+        <Image Margin="184,328,576.333,44.667" Source="homer.png" Stretch="Fill" RenderTransformOrigin="0.135,0.456"/>
+        <Button x:Name="edificio0" Content="0" HorizontalAlignment="Left" Margin="36,328,0,0" VerticalAlignment="Top" Width="119" Height="48"/>
+        <Button x:Name="edificio1" Content="1" HorizontalAlignment="Left" Margin="36,272,0,0" VerticalAlignment="Top" Width="119" Height="48"/>
+        <Button x:Name="edificio2" Content="2" HorizontalAlignment="Left" Margin="36,211,0,0" VerticalAlignment="Top" Width="119" Height="48"/>
+        <Button x:Name="edificio3" HorizontalAlignment="Left" Margin="36,158,0,0" VerticalAlignment="Top" Width="119" Height="48" Content="3"/>
+        <Button x:Name="edificio4" Content="4" HorizontalAlignment="Left" Margin="36,97,0,0" VerticalAlignment="Top" Width="119" Height="48"/>
+        <Image Margin="178,320,501.333,32.667" Source="ascensore.png" Stretch="Fill"/>
+        <Label Content="Tastierino ascensore" HorizontalAlignment="Left" Margin="342,26,0,0" VerticalAlignment="Top" Width="173"/>
+        <Button x:Name="ascensore4" Content="4" HorizontalAlignment="Left" Margin="342,57,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="ascensore3" Content="3" HorizontalAlignment="Left" Margin="422,57,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="ascensore2" Content="2" HorizontalAlignment="Left" Margin="342,83,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="ascensore1" Content="1" HorizontalAlignment="Left" Margin="422,83,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="ascensore0" Content="0" HorizontalAlignment="Left" Margin="382,111,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Piano prenotato" HorizontalAlignment="Left" Margin="334,188,0,0" VerticalAlignment="Top" Width="181"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="342,211,0,0" VerticalAlignment="Top" Width="115"/>
     </Grid>
 </Window>
