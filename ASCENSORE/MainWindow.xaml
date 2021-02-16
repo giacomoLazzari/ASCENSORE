@@ -28,14 +28,14 @@
         <Button x:Name="edificio2" Content="2" HorizontalAlignment="Left" Margin="36,211,0,0" VerticalAlignment="Top" Width="119" Height="48" Click="edificio2_Click"/>
         <Button x:Name="edificio3" HorizontalAlignment="Left" Margin="36,158,0,0" VerticalAlignment="Top" Width="119" Height="48" Content="3" Click="edificio3_Click"/>
         <Button x:Name="edificio4" Content="4" HorizontalAlignment="Left" Margin="36,97,0,0" VerticalAlignment="Top" Width="119" Height="48" Click="edificio4_Click"/>
-        <Image x:Name="imgAscensore" Margin="176,83,500.333,269.667" Source="ascensore.png" Stretch="Fill"/>
+        <Image x:Name="imgAscensore" Margin="176,83,499.333,269.667" Source="ascensore.png" Stretch="Fill"/>
         <Label Content="Tastierino ascensore" HorizontalAlignment="Left" Margin="342,26,0,0" VerticalAlignment="Top" Width="173"/>
-        <Button x:Name="ascensore4" Content="4" HorizontalAlignment="Left" Margin="342,57,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="ascensore3" Content="3" HorizontalAlignment="Left" Margin="422,57,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="ascensore2" Content="2" HorizontalAlignment="Left" Margin="342,83,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="ascensore1" Content="1" HorizontalAlignment="Left" Margin="422,83,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="ascensore0" Content="0" HorizontalAlignment="Left" Margin="382,111,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="ascensore4" Content="4" HorizontalAlignment="Left" Margin="342,57,0,0" VerticalAlignment="Top" Width="75" Click="ascensore4_Click"/>
+        <Button x:Name="ascensore3" Content="3" HorizontalAlignment="Left" Margin="422,57,0,0" VerticalAlignment="Top" Width="75" Click="ascensore3_Click"/>
+        <Button x:Name="ascensore2" Content="2" HorizontalAlignment="Left" Margin="342,83,0,0" VerticalAlignment="Top" Width="75" Click="ascensore2_Click"/>
+        <Button x:Name="ascensore1" Content="1" HorizontalAlignment="Left" Margin="422,83,0,0" VerticalAlignment="Top" Width="75" Click="ascensore1_Click"/>
+        <Button x:Name="ascensore0" Content="0" HorizontalAlignment="Left" Margin="382,111,0,0" VerticalAlignment="Top" Width="75" Click="ascensore0_Click"/>
         <Label Content="Piano prenotato" HorizontalAlignment="Left" Margin="334,188,0,0" VerticalAlignment="Top" Width="181"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="342,211,0,0" VerticalAlignment="Top" Width="115"/>
+        <Label x:Name="lblPianoPrenotato" Content="" HorizontalAlignment="Left" Margin="342,211,0,0" VerticalAlignment="Top" Width="115"/>
     </Grid>
 </Window>
