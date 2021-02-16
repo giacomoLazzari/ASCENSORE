@@ -23,12 +23,12 @@
         </Image>
         <Image Margin="166,94,597.333,275.667" Source="biscottino.png" Stretch="Fill"/>
         <Image Margin="184,328,576.333,44.667" Source="homer.png" Stretch="Fill" RenderTransformOrigin="0.135,0.456"/>
-        <Button x:Name="edificio0" Content="0" HorizontalAlignment="Left" Margin="36,328,0,0" VerticalAlignment="Top" Width="119" Height="48"/>
-        <Button x:Name="edificio1" Content="1" HorizontalAlignment="Left" Margin="36,272,0,0" VerticalAlignment="Top" Width="119" Height="48"/>
-        <Button x:Name="edificio2" Content="2" HorizontalAlignment="Left" Margin="36,211,0,0" VerticalAlignment="Top" Width="119" Height="48"/>
-        <Button x:Name="edificio3" HorizontalAlignment="Left" Margin="36,158,0,0" VerticalAlignment="Top" Width="119" Height="48" Content="3"/>
-        <Button x:Name="edificio4" Content="4" HorizontalAlignment="Left" Margin="36,97,0,0" VerticalAlignment="Top" Width="119" Height="48"/>
-        <Image Margin="178,320,501.333,32.667" Source="ascensore.png" Stretch="Fill"/>
+        <Button x:Name="edificio0" Content="0" HorizontalAlignment="Left" Margin="36,328,0,0" VerticalAlignment="Top" Width="119" Height="48" Click="edificio0_Click"/>
+        <Button x:Name="edificio1" Content="1" HorizontalAlignment="Left" Margin="36,272,0,0" VerticalAlignment="Top" Width="119" Height="48" Click="edificio1_Click"/>
+        <Button x:Name="edificio2" Content="2" HorizontalAlignment="Left" Margin="36,211,0,0" VerticalAlignment="Top" Width="119" Height="48" Click="edificio2_Click"/>
+        <Button x:Name="edificio3" HorizontalAlignment="Left" Margin="36,158,0,0" VerticalAlignment="Top" Width="119" Height="48" Content="3" Click="edificio3_Click"/>
+        <Button x:Name="edificio4" Content="4" HorizontalAlignment="Left" Margin="36,97,0,0" VerticalAlignment="Top" Width="119" Height="48" Click="edificio4_Click"/>
+        <Image x:Name="imgAscensore" Margin="176,83,500.333,269.667" Source="ascensore.png" Stretch="Fill"/>
         <Label Content="Tastierino ascensore" HorizontalAlignment="Left" Margin="342,26,0,0" VerticalAlignment="Top" Width="173"/>
         <Button x:Name="ascensore4" Content="4" HorizontalAlignment="Left" Margin="342,57,0,0" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="ascensore3" Content="3" HorizontalAlignment="Left" Margin="422,57,0,0" VerticalAlignment="Top" Width="75"/>
