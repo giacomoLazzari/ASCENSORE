@@ -28,7 +28,7 @@
         <Button x:Name="edificio2" Content="2" HorizontalAlignment="Left" Margin="36,211,0,0" VerticalAlignment="Top" Width="119" Height="48" Click="edificio2_Click"/>
         <Button x:Name="edificio3" HorizontalAlignment="Left" Margin="36,158,0,0" VerticalAlignment="Top" Width="119" Height="48" Content="3" Click="edificio3_Click"/>
         <Button x:Name="edificio4" Content="4" HorizontalAlignment="Left" Margin="36,97,0,0" VerticalAlignment="Top" Width="119" Height="48" Click="edificio4_Click"/>
-        <Image x:Name="imgAscensore" Margin="176,83,499.333,269.667" Source="ascensore.png" Stretch="Fill"/>
+        <Image x:Name="imgAscensore" Margin="175,320,499.333,32.667" Source="ascensore.png" Stretch="Fill"/>
         <Label Content="Tastierino ascensore" HorizontalAlignment="Left" Margin="342,26,0,0" VerticalAlignment="Top" Width="173"/>
         <Button x:Name="ascensore4" Content="4" HorizontalAlignment="Left" Margin="342,57,0,0" VerticalAlignment="Top" Width="75" Click="ascensore4_Click"/>
         <Button x:Name="ascensore3" Content="3" HorizontalAlignment="Left" Margin="422,57,0,0" VerticalAlignment="Top" Width="75" Click="ascensore3_Click"/>

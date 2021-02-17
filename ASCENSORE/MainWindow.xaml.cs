@@ -128,6 +128,7 @@ namespace ASCENSORE
                 {
                     lblPianoPrenotato.Content = "1";
                 }));
+
                 double g = 260.501;
                 int time = 20;
 
