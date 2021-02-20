@@ -189,7 +189,6 @@ namespace ASCENSORE
 
 
             }
-            selezioneTastierino = false;
             Thread.Sleep(TimeSpan.FromSeconds(4));
             selezioneTastierino = true;
 
@@ -238,7 +237,6 @@ namespace ASCENSORE
                 }
 
             }
-            selezioneTastierino = false;
             Thread.Sleep(TimeSpan.FromSeconds(4));
             selezioneTastierino = true;
         }
@@ -287,7 +285,6 @@ namespace ASCENSORE
 
 
             }
-            selezioneTastierino = false;
             Thread.Sleep(TimeSpan.FromSeconds(4));
             selezioneTastierino = true;
         }
@@ -386,7 +383,6 @@ namespace ASCENSORE
             selezioneTastierino = false;
             Thread.Sleep(TimeSpan.FromSeconds(4));
             selezioneTastierino = true;
-
         }
 
         private void ascensore0_Click(object sender, RoutedEventArgs e)
@@ -397,7 +393,7 @@ namespace ASCENSORE
                 f = imgAscensore.Margin.Top;
                 i = imgAscensore.Margin.Bottom;
             }));
-            selezioneTastierino = true;
+            
             t0 = new Thread(new ThreadStart(MetodoBottone0));
            
             t0.Start();
@@ -411,7 +407,7 @@ namespace ASCENSORE
                 f = imgAscensore.Margin.Top;
                 i = imgAscensore.Margin.Bottom;
             }));
-            selezioneTastierino = true;
+            
             t1 = new Thread(new ThreadStart(MetodoBottone1));
            
             t1.Start();
@@ -425,7 +421,7 @@ namespace ASCENSORE
                 f = imgAscensore.Margin.Top;
                 i = imgAscensore.Margin.Bottom;
             }));
-            selezioneTastierino = true;
+            
             t2 = new Thread(new ThreadStart(MetodoBottone2));
             
             t2.Start();
@@ -440,7 +436,7 @@ namespace ASCENSORE
                 f = imgAscensore.Margin.Top;
                 i = imgAscensore.Margin.Bottom;
             }));
-            selezioneTastierino = true;
+            
             t3 = new Thread(new ThreadStart(MetodoBottone3));
             
             t3.Start();
@@ -457,7 +453,7 @@ namespace ASCENSORE
                 f = imgAscensore.Margin.Top;
                 i = imgAscensore.Margin.Bottom;
             }));
-            selezioneTastierino = true;
+            
             t4 = new Thread(new ThreadStart(MetodoBottone4));
             
             t4.Start();
