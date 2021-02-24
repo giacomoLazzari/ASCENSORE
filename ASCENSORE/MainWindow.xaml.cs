@@ -31,6 +31,7 @@ namespace ASCENSORE
         double f;
         double i;
         public object x = new object();
+        public object y = new object();
         bool selezioneTastierino;
         
 
@@ -49,89 +50,77 @@ namespace ASCENSORE
         private void edificio0_Click(object sender, RoutedEventArgs e)
         {
 
-            while (selezioneTastierino == false)
-            {
-                Task.Delay(TimeSpan.FromMilliseconds(300));
-            }
             
-            if (selezioneTastierino == true)
+            
+            lock (y)
             {
-                this.Dispatcher.BeginInvoke(new Action(() =>
-                {
-                    f = imgAscensore.Margin.Top;
-                    i = imgAscensore.Margin.Bottom;
-                }));
-                t0 = new Thread(new ThreadStart(MetodoBottone0));
+               
+                    this.Dispatcher.BeginInvoke(new Action(() =>
+                    {
+                        f = imgAscensore.Margin.Top;
+                        i = imgAscensore.Margin.Bottom;
+                    }));
+                    t0 = new Thread(new ThreadStart(MetodoBottone0));
 
-                t0.Start();
+                    t0.Start();
+                
             }
           
 
         }
 
         private void edificio1_Click(object sender, RoutedEventArgs e)
-        {
+        { 
+            lock (y)
 
-            while (selezioneTastierino == false)
             {
-                Task.Delay(TimeSpan.FromMilliseconds(300));
-            }
-            
-            if (selezioneTastierino == true)
-            {
-                this.Dispatcher.BeginInvoke(new Action(() =>
-                {
-                    f = imgAscensore.Margin.Top;
-                    i = imgAscensore.Margin.Bottom;
-                }));
-                t1 = new Thread(new ThreadStart(MetodoBottone1));
-
-                t1.Start();
-            }
                 
-            
+                    this.Dispatcher.BeginInvoke(new Action(() =>
+                    {
+                        f = imgAscensore.Margin.Top;
+                        i = imgAscensore.Margin.Bottom;
+                    }));
+                    t1 = new Thread(new ThreadStart(MetodoBottone1));
+
+                    t1.Start();
+                
+
+            }
         }
         
         private void edificio2_Click(object sender, RoutedEventArgs e)
         {
-
-            while (selezioneTastierino == false)
+            lock (y)
             {
-                Task.Delay(TimeSpan.FromMilliseconds(300));
-            }
-            
-            if (selezioneTastierino == true)
-            {
-                this.Dispatcher.BeginInvoke(new Action(() =>
-                {
-                    f = imgAscensore.Margin.Top;
-                    i = imgAscensore.Margin.Bottom;
-                }));
-                t2 = new Thread(new ThreadStart(MetodoBottone2));
+                
+                    this.Dispatcher.BeginInvoke(new Action(() =>
+                    {
+                        f = imgAscensore.Margin.Top;
+                        i = imgAscensore.Margin.Bottom;
+                    }));
+                    t2 = new Thread(new ThreadStart(MetodoBottone2));
 
-                t2.Start();
+                    t2.Start();
+                
+
             }
-            
-            
         }
 
         private void edificio3_Click(object sender, RoutedEventArgs e)
         {
-            while (selezioneTastierino == false)
-            {
-                Task.Delay(TimeSpan.FromMilliseconds(300));
-            }
             
-            if (selezioneTastierino == true)
+           lock(y)
             {
-                this.Dispatcher.BeginInvoke(new Action(() =>
-                {
-                    f = imgAscensore.Margin.Top;
-                    i = imgAscensore.Margin.Bottom;
-                }));
-                t3 = new Thread(new ThreadStart(MetodoBottone3));
+                
+                    this.Dispatcher.BeginInvoke(new Action(() =>
+                    {
+                        f = imgAscensore.Margin.Top;
+                        i = imgAscensore.Margin.Bottom;
+                    }));
+                    t3 = new Thread(new ThreadStart(MetodoBottone3));
 
-                t3.Start();
+                    t3.Start();
+                
             }
             
             
@@ -139,21 +128,20 @@ namespace ASCENSORE
 
         private void edificio4_Click(object sender, RoutedEventArgs e)
         {
-            while (selezioneTastierino == false)
-            {
-                Task.Delay(TimeSpan.FromMilliseconds(300));
-            }
+           
             
-            if (selezioneTastierino == true)
+            lock(y)
             {
-                this.Dispatcher.BeginInvoke(new Action(() =>
-                {
-                    f = imgAscensore.Margin.Top;
-                    i = imgAscensore.Margin.Bottom;
-                }));
-                t4 = new Thread(new ThreadStart(MetodoBottone4));
+               
+                    this.Dispatcher.BeginInvoke(new Action(() =>
+                    {
+                        f = imgAscensore.Margin.Top;
+                        i = imgAscensore.Margin.Bottom;
+                    }));
+                    t4 = new Thread(new ThreadStart(MetodoBottone4));
 
-                t4.Start();
+                    t4.Start();
+                
             }
 
         }
@@ -190,7 +178,7 @@ namespace ASCENSORE
 
             }
             Thread.Sleep(TimeSpan.FromSeconds(4));
-            selezioneTastierino = true;
+           
 
         }
 
@@ -238,7 +226,7 @@ namespace ASCENSORE
 
             }
             Thread.Sleep(TimeSpan.FromSeconds(4));
-            selezioneTastierino = true;
+           
         }
 
         public void MetodoBottone2()
@@ -286,7 +274,7 @@ namespace ASCENSORE
 
             }
             Thread.Sleep(TimeSpan.FromSeconds(4));
-            selezioneTastierino = true;
+            
         }
         public void MetodoBottone3()
         {
@@ -334,7 +322,7 @@ namespace ASCENSORE
             }
             selezioneTastierino = false;
             Thread.Sleep(TimeSpan.FromSeconds(4));
-            selezioneTastierino = true;
+            
         }
 
         public void MetodoBottone4()
@@ -382,7 +370,8 @@ namespace ASCENSORE
             }
             selezioneTastierino = false;
             Thread.Sleep(TimeSpan.FromSeconds(4));
-            selezioneTastierino = true;
+           
+
         }
 
         private void ascensore0_Click(object sender, RoutedEventArgs e)
@@ -397,6 +386,7 @@ namespace ASCENSORE
             t0 = new Thread(new ThreadStart(MetodoBottone0));
            
             t0.Start();
+
         }
 
         private void ascensore1_Click(object sender, RoutedEventArgs e)
